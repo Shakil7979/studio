@@ -18,6 +18,9 @@ time, mark, audio, span, video {
    font-size: 100%;
    background: transparent;
 }
+body{
+	font-family: 'Lato', sans-serif;
+}
 table {
    border-collapse: collapse;
    border-spacing: 0;
@@ -54,4 +57,416 @@ a{
 }
 a:hover{
   text-decoration: none;
+}
+
+
+/* sidebar csss  */
+
+.main-area {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sidebar-area {
+	flex: 0 0 18%;
+	height: 100vh;
+	background: #fff;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.logo {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.menu ul li a {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	color: #6F6F6F;
+	padding: 10px 13px;
+	display: block;
+	display: flex;
+	gap: 10px;
+	/* width: 165px; */
+	border-radius: 10px;
+	align-items: center;
+}
+
+.menu ul li a.active, .menu ul li a:hover {
+	background: #0D0F5A;
+	color: #fff; 
+}
+
+.mt-custom {
+	margin-top: 80px;
+}
+.menu ul li {
+	margin-bottom: 8px;
+}
+.margin_bttm {
+	margin-bottom: 25px !important;
+}
+
+
+.logo a {
+	font-size: 30px;
+	font-weight: 700;
+	color: #393939;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+.menu span {
+	font-size: 12px;
+	color: #686666;
+	margin-bottom: 8px;
+	display: inline-block;
+}
+
+.menu ul li a i {
+	font-size: 14px;
+}
+
+.noti_btn {
+	width: 35px;
+	height: 35px;
+	background: #fff;
+	display: block;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	color: #6F6F6F;
+}
+
+
+/* main content css  */
+/* header css  */
+
+.main-content-area {
+	flex: 0 0 82%;
+	background: #F7F8FC;
+	height: 100vh;
+	padding: 30px;
+	box-sizing: border-box;
+	overflow-y: scroll;
+	scrollbar-width: none;
+} 
+
+.header-title {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+.sidebar_close,
+.bars_icon{
+	display: none;
+}
+.bars_icon i {
+	color: #252733;
+	font-size: 22px;
+}
+
+.sidebar_close i{
+	position: absolute;
+	right: -35px;
+	width: 35px;
+	height: 35px;
+	background: #363740;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	text-decoration: none;
+	color: #fff;
+	top: 0; 
+}
+
+.header-area {
+	display: flex;
+	justify-content: space-between; 
+  align-items: center;
+}
+
+.header-title h3 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: 0.3px;
+	color: #252733;
+}
+
+.header-user {
+	display: flex;
+	align-items: center;
+}
+
+.header-user > ul {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.mr-border {
+	margin-right: 15px;
+	border-right: 1px solid #ddd;
+	padding-right: 15px;
+}
+
+.header-user-img a {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: right;
+	letter-spacing: 0.2px;
+	color: #252733;
+	display: flex;
+	align-items: center;
+	gap: 9px;
+}
+
+.sidebar_user a img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.sidebar_user a {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	color: #6F6F6F;
+	background: #F7F8FC;
+	border-radius: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.user_cont h4 {
+	font-size: 15px;
+	font-weight: 700;
+	color: #313131;
+}
+
+.user_cont span {
+	font-size: 14px;
+}
+
+
+
+
+
+.account-status .account-card-title { 
+	padding: 32px 32px 0px 32px;
+	margin-bottom: 0px;
+}
+
+.table tbody tr td > p { 
+	margin-top: -15px;
+}
+
+.header-user ul li {
+	position: relative;
+}
+
+.noti-toggle {
+	position: absolute;
+	background: #fff;
+	padding: 23px;
+	border-radius: 8px;
+	right: 0;
+	top: 100%;
+	border: 1px solid #DFE0EB;
+	width: 180px;
+	display: none;
+	z-index: 99;
+}
+
+.noti-toggle > ul {
+	display: flex;
+	flex-direction: column; 
+	flex-wrap: wrap;
+}
+
+.noti-toggle ul li{
+	margin-bottom: 12px;
+}
+
+.noti-toggle ul li h3 {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	color: #252733;
+}
+
+.noti-toggle ul li p {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 20px; 
+	letter-spacing: 0.2px;
+	color: #9FA2B4;
+}
+
+
+ 
+.search-box {
+	font-size: 30px;
+	padding: 14px 19px;
+	border: 1px solid #C1C1C1;
+	background-color: white;
+	width: 9.8em;
+	border-radius: 10px;
+	transition: .2s;
+  }
+  
+  .search-box:hover {
+	border-color: #AAAAAA;
+  }
+
+  .search-field-box button {
+	position: relative;
+	background: none;
+	border: none;
+	padding: 0;
+	width: 100%;
+}
+  
+  .search-box:focus-within {
+	border-color: #FF0080;
+	box-shadow: 0 0 0 5px rgba(255, 0, 128, 0.40);
+  }
+  
+  .search-field-box input {
+	letter-spacing: -0.2px;
+	font-size: 30px;
+	border: none;
+	color: #323232;
+	border-radius: 8px;
+	padding: 9px 37px 9px 9px;
+	/* border: 1px solid #C1C1C1; */
+	font-size: 16px;
+	vertical-align: 4px;
+	width: 255px;
+}
+  
+  .search-field-box button:hover {
+	cursor: pointer;
+  }
+  
+  .search-field-box input:focus {
+	outline: none;
+  }
+  
+  .search-field-box input[type='search']::-webkit-search-cancel-button {
+	  -webkit-appearance: none;	
+  }
+  
+  .clear:not(:valid) ~ .search-clear {
+	  display: none;
+  }
+
+  .searc_icon {
+	position: absolute;
+	top: 14px;
+	right: 14px;
+}
+
+.search-field-box {
+	margin-top: -24px;
+}
+
+.header_user span {
+	color: #6F6F6F;
+	font-size: 14px; 
+	margin-top: 4px;
+	display: inline-block;
+}
+.main_content {
+	margin-top: 30px;
+}
+
+.wave {
+	animation-name: wave-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	transform-origin: 70% 70%;
+	display: inline-block;
+	font-size: 20px !important;
+}
+  
+  @keyframes wave-animation {
+	  0% { transform: rotate( 0.0deg) }
+	 10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+	 20% { transform: rotate(-8.0deg) }
+	 30% { transform: rotate(14.0deg) }
+	 40% { transform: rotate(-4.0deg) }
+	 50% { transform: rotate(10.0deg) }
+	 60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+	100% { transform: rotate( 0.0deg) }
+  }
+  
+
+
+
+
+
+
+/* Main Content css */
+
+.card-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card-title h4 {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.card-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card_text h2 {
+	font-size: 35px;
+	font-weight: 700;
+	margin: 14px 0 32px 0;
+}
+
+.card_text span {
+	display: inline-block;
+	font-size: 11px;
+	background: #0fee851f;
+	color: #0fee85b2;
+	padding: 1px 3px;
+	border-radius: 5px;
+}
+
+.main_content .card {
+	height: 100%;
+	border: none;
+}
+
+.card_progress {
+	width: 100%;
+	height: 100%;
+}
+
+.card_progress img {
+	width: 100%; 
 }
