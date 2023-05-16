@@ -1,3 +1,12 @@
+@media all and (min-width:1400px){
+    .card_progress {
+        text-align: center;
+        width: inherit;
+    }
+    .card_progress img {
+        width:inherit;
+    }
+}
 @media all and (max-width:1100px){
     .sidebar-area {
         position: absolute;
