@@ -65,10 +65,12 @@ a:hover{
 .main-area {
 	display: flex;
 	justify-content: space-between;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .sidebar-area {
-	flex: 0 0 18%;
+	/* flex: 0 0 18%; */
 	height: 100vh;
 	background: #fff;
 	padding: 20px;
@@ -76,6 +78,7 @@ a:hover{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	width: 240px !important;
 }
 
 .logo {
@@ -154,14 +157,14 @@ a:hover{
 /* header css  */
 
 .main-content-area {
-	flex: 0 0 82%;
+	flex: 0 0 calc(100% - 240px);
 	background: #F7F8FC;
 	height: 100vh;
 	padding: 30px;
 	box-sizing: border-box;
 	overflow-y: scroll;
-	scrollbar-width: none; 
-} 
+	scrollbar-width: none;
+}
 
 .mobile_overlay_after{
 	position: relative;
