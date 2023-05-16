@@ -1,3 +1,5 @@
+
+
 @media all and (min-width:1400px){
     .card_progress {
         text-align: center;
@@ -10,12 +12,16 @@
 @media all and (max-width:1100px){
     .sidebar-area {
         position: absolute;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
         transition: 0.3s;
         left: -100%;
         z-index: 99;
     }
     .main-content-area {
-        flex: 0 0 100%; 
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%; 
     }
     .bars_icon,
     .sidebar_close { 
@@ -24,7 +30,9 @@
 }
 @media all and (max-width:991px){
     .single-card {  
-        flex: 0 0 48%; 
+        -webkit-box-flex: 0;  
+            -ms-flex: 0 0 48%;  
+                flex: 0 0 48%; 
         margin-bottom: 18px;
     } 
     .search-field-box { 
@@ -47,14 +55,20 @@
     }
     .table tbody tr, .table thead tr {
         border-bottom: 1.5px solid #DFE0EB;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .single-card h2 { 
         font-size: 24px; 
     }
     .account-status, .receipt-box {
-        flex: 0 0 100%; 
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%; 
         margin-bottom: 18px;
     }
     .table-area {
@@ -65,7 +79,9 @@
         padding: 8px 13px;
     }
     .video {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
     }
     .video { 
         margin-bottom: 18px;
@@ -102,7 +118,10 @@
         width: 298px;
     }
     .card_session_btn { 
-        flex-direction: column;
+        -webkit-box-orient: vertical; 
+        -webkit-box-direction: normal; 
+            -ms-flex-direction: column; 
+                flex-direction: column;
         gap: 10px;
     }
 }
