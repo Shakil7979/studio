@@ -11,10 +11,12 @@ $(".toggle-password").click(function() {
 
 $(document).on('click','.bars_icon',function(){
     $('.sidebar-area').css({'left':'0'});
+    $('.main-content-area ').addClass('mobile_overlay_after');
 });
 
 $(document).on('click','.sidebar_close',function(){
     $('.sidebar-area').css({'left':'-100%'});
+    $('.main-content-area ').removeClass('mobile_overlay_after');
 });
 
 $(document).on('click','.noti_btn',function(){

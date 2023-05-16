@@ -89,7 +89,7 @@ a:hover{
 	font-size: 16px;
 	line-height: 20px;
 	letter-spacing: 0.2px;
-	color: #6F6F6F;
+	color: #9C9C9C;
 	padding: 10px 13px;
 	display: block;
 	display: flex;
@@ -105,10 +105,12 @@ a:hover{
 }
 
 .mt-custom {
-	margin-top: 80px;
+	margin-top: 40px;
+	padding-top: 40px;
+	border-top: 1px solid #f2f2f2;
 }
 .menu ul li {
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 }
 .margin_bttm {
 	margin-bottom: 25px !important;
@@ -118,15 +120,16 @@ a:hover{
 .logo a {
 	font-size: 30px;
 	font-weight: 700;
-	color: #393939;
-	margin-bottom: 30px;
+	color: #0D0F5A;
+	margin: 20px;
 	display: inline-block;
 }
 .menu span {
 	font-size: 12px;
-	color: #686666;
-	margin-bottom: 8px;
+	color: #9C9C9C;
+	margin-bottom: 16px;
 	display: inline-block;
+	margin-left: 15px;
 }
 
 .menu ul li a i {
@@ -143,7 +146,7 @@ a:hover{
 	justify-content: center;
 	align-items: center;
 	border-radius: 5px;
-	color: #6F6F6F;
+	color: #9C9C9C;
 }
 
 
@@ -157,8 +160,23 @@ a:hover{
 	padding: 30px;
 	box-sizing: border-box;
 	overflow-y: scroll;
-	scrollbar-width: none;
+	scrollbar-width: none; 
 } 
+
+.mobile_overlay_after{
+	position: relative;
+}
+
+.mobile_overlay_after::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.43; 
+}
 
 .header-title {
 	display: flex;
@@ -244,7 +262,7 @@ a:hover{
 	display: flex;
 	gap: 5px;
 	align-items: center;
-	color: #6F6F6F;
+	color: #9C9C9C;
 	background: #F7F8FC;
 	border-radius: 5px;
 	padding: 10px;
@@ -388,7 +406,7 @@ a:hover{
 }
 
 .header_user span {
-	color: #6F6F6F;
+	color: #9C9C9C;
 	font-size: 14px; 
 	margin-top: 4px;
 	display: inline-block;
@@ -499,7 +517,7 @@ a:hover{
 
 .top_browser_title p {
 	font-size: 10px;
-	color: #6F6F6F;
+	color: #9C9C9C;
 }
 
 .card_content_top {
@@ -515,7 +533,7 @@ a:hover{
 }
 
 .card_brouser_char h3 span{
-	color: #6F6F6F;
+	color: #9C9C9C;
 	font-size: 12px;
 
 }
@@ -535,7 +553,7 @@ a:hover{
 	border: 1px solid #ddd;
 	padding: 3px 10px;
 	border-radius: 5px;
-	color: #6F6F6F;
+	color: #9C9C9C;
 }
 
 .card_session_btn button {
@@ -560,14 +578,14 @@ a:hover{
 
 .card-top-title > p {
 	font-size: 12px;
-	color: #6F6F6F;
+	color: #9C9C9C;
 }
 .max_count {
 	position: absolute;
 	right: 0;
 	top: -18px;
 	font-size: 10px;
-	color: #6F6F6F;
+	color: #9C9C9C;
 }
 
 
