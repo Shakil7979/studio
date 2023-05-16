@@ -21,11 +21,20 @@
     .search-field-box { 
         left: -172px; 
     }
+    .card_text h2 {
+        font-size: 21px; 
+    }
+    .card_img img {
+        width: 42px;
+    }
 }
 @media all and (max-width:767px){
     .single-card p { 
         font-size: 16px; 
         margin-bottom: 0;
+    }
+    .card_img img {
+        width: 110px;
     }
     .table tbody tr, .table thead tr {
         border-bottom: 1.5px solid #DFE0EB;
