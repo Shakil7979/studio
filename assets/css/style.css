@@ -94,7 +94,12 @@
 		 -ms-flex-pack: justify;
 			 justify-content: space-between;
 	 width: 240px !important;
+	 overflow-y: scroll;
+	 scrollbar-width: none; 
  }
+ .sidebar-area::-webkit-scrollbar {
+	display: none;
+  }
  
  .logo {
 	 text-align: center;
@@ -229,7 +234,7 @@
  
  .sidebar_close i {
 	 position: absolute;
-	 right: -35px;
+	 right: 0;
 	 width: 35px;
 	 height: 35px;
 	 background: #0D0F5A;
