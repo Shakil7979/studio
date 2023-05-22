@@ -43,18 +43,7 @@
     }
     .card_img img {
         width: 42px;
-    }
-    .mt-custom {
-        margin-top: 8px;
-        padding-top: 8px;
-        border-top: 1px solid #f2f2f2;
-    }
-    .logo { 
-        margin-bottom: 0;
-    }
-    .menu ul li {
-        margin-bottom: 7px;
-    }
+    } 
     .sidebar-area { 
         overflow: hidden;
         overflow-y: scroll;
